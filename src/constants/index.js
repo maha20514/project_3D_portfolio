@@ -16,12 +16,12 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
+  bayhomes_icon,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  bayhomes,
+  AIsummarize,
+  nft,
   threejs,
 } from "../assets";
 
@@ -81,10 +81,6 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -104,69 +100,25 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Back-End Developer",
+    company_name: "Bay Homes Real State",
+    icon: bayhomes_icon,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "JUN 2024 - SEP 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained server‑side logic and infrastructure for a real estate listing website, ensuring seamless performance and security.",
+      "Integrated RESTful APIs to support dynamic property listings, user authentication, and admin dashboard functionalities.",
+      "Collaborated with front‑end developers and designers to align user experience with backend processes.",
+     " Managed data storage using MongoDB databases, ensuring optimized queries and data integrity.",
+     "Implemented authentication, authorization, and secure data transactions to safeguard user and property data."
     ],
   },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+
+ 
 ];
 
 const testimonials = [
@@ -198,67 +150,67 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Bay Homes Real Estate",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A real estate web platform powered by Next.js and MongoDB. I developed and managed backend APIs for property listings, user authentication, and data management.",
     tags: [
       {
-        name: "react",
+        name: "Next.js",
+        color: "white-text-gradient",
+      },
+      {
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "MongoDB",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: bayhomes,
+    source_code_link: "https://www.bayhomesae.com/",
   },
   {
-    name: "Job IT",
+    name: "AI Summarizer",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An AI-powered tool that summarizes content from any URL using OpenAI's GPT models. Built with React and integrated via RapidAPI for seamless content processing.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "RapidAPI ",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "OPenAI",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: AIsummarize,
+    source_code_link: "https://ai-summarizer-two-zeta.vercel.app/",
   },
   {
-    name: "Trip Guide",
+    name: "NFT Marketplace",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A decentralized platform enabling users to mint, buy, and trade NFTs. Built with Next.js, Solidity, and Web3.js, with smart contracts and blockchain-based asset verification.",
     tags: [
       {
-        name: "nextjs",
+        name: "Next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Solidity",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Web3.js",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: nft,
+    source_code_link: "https://nft-marketplace-nu-nine.vercel.app/",
   },
 ];
 

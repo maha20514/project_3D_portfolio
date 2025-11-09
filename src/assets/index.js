@@ -23,12 +23,12 @@ import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
+import bayhomes_icon from "./company/bayhomes.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import bayhomes from "./BayHomes.png";
+import AIsummarize from "./AI_Summarize.png";
+import nft from "./nft.png";
 
 export {
   logo,
@@ -54,9 +54,9 @@ export {
   threejs,
   meta,
   shopify,
-  starbucks,
+  bayhomes_icon,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  bayhomes,
+  AIsummarize,
+  nft,
 };
