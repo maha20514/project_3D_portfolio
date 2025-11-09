@@ -22,6 +22,7 @@ import {
   bayhomes,
   AIsummarize,
   nft,
+  devoverflow,
   threejs,
 } from "../assets";
 
@@ -191,7 +192,7 @@ const projects = [
     image: AIsummarize,
     source_code_link: "https://ai-summarizer-two-zeta.vercel.app/",
   },
-  {
+  /* {
     name: "NFT Marketplace",
     description:
       "A decentralized platform enabling users to mint, buy, and trade NFTs. Built with Next.js, Solidity, and Web3.js, with smart contracts and blockchain-based asset verification.",
@@ -211,7 +212,29 @@ const projects = [
     ],
     image: nft,
     source_code_link: "https://nft-marketplace-nu-nine.vercel.app/",
-  },
+  }, */
+  {
+  name: "Dev Over Flow",
+  description:
+    "Dev Over Flow is a developer-focused Q&A platform designed to foster a large programming community. It allows users to ask questions, provide answers, add tags, and interact through voting and saving important content. The platform also features AI-powered answer recommendations, highlights top questions, and showcases popular tags, enabling programmers to efficiently share knowledge and collaborate on coding challenges.",
+  tags: [
+    {
+      name: "Next.js",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "React",
+      color: "green-text-gradient",
+    },
+    {
+      name: "Tailwind CSS",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: devoverflow, 
+  source_code_link: "https://dev-over-flow-xi.vercel.app/",
+}
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };
