@@ -43,21 +43,24 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.p
+     <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled Back-End developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, and Node.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a Full-Stack Developer specializing in building scalable web applications
+        using Next.js, React, and Node.js. I design secure RESTful APIs, implement
+        authentication and authorization systems, and manage MongoDB databases to
+        deliver high-performance digital solutions. I have hands-on experience
+        developing admin dashboards, optimizing application performance, and
+        structuring clean, maintainable code. I focus on creating reliable systems
+        that combine strong backend architecture with modern, user-friendly interfaces.
       </motion.p>
 
-      {/* <div className='mt-20 flex flex-wrap gap-10'>
+      {<div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div> */}
+      </div> }
     </>
   );
 };

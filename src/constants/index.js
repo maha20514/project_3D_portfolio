@@ -17,11 +17,13 @@ import {
   docker,
   meta,
   bayhomes_icon,
+  tafaseel_icon,
+  amilcar_icon,
   tesla,
   shopify,
   bayhomes,
   AIsummarize,
-  nft,
+  tafaseel,
   devoverflow,
   threejs,
 } from "../assets";
@@ -41,22 +43,45 @@ export const navLinks = [
   },
 ];
 
-const services = [
+/* export const services = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "RESTful API Development",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Admin Dashboard Systems",
+    icon: mobile,
+  },
+  {
+    title: "Database Design & Optimization",
     icon: creator,
+  },
+  {
+    title: "Authentication & Authorization",
+    icon: web,
+  },
+]; */
+
+export const services = [
+  {
+    title: "Full-Stack Web Development",
+    icon: web,
+  },
+  {
+    title: "Backend & RESTful API Development",
+    icon: backend,
+  },
+  {
+    title: "Admin Dashboard Systems",
+    icon: creator,
+  },
+  {
+    title: "Database Design & Optimization",
+    icon: mobile,
   },
 ];
 
@@ -118,6 +143,39 @@ const experiences = [
      "Implemented authentication, authorization, and secure data transactions to safeguard user and property data."
     ],
   },
+  {
+  title: "Full-Stack Web Developer Intern",
+  company_name: "Amilcar Technologies",
+  icon: amilcar_icon,
+  iconBg: "#E6DEDD",
+  date: "JUNE 2025 - AUG 2025",
+  points: [
+    "Enhanced trading project processing efficiency by 18% by restructuring workflows and reducing repetitive tasks.",
+    "Designed relational database structures and executed optimized insert/update operations to ensure stable and reliable data flow.",
+    "Improved textile project UI performance by 22% through component restructuring and frontend performance optimization.",
+    "Reduced machine data errors by 15% by enhancing logging mechanisms and refining data handling logic.",
+    "Developed system features across data processing and interface integrations using PHP and JavaScript.",
+    "Built monitoring dashboards displaying real-time machine status updates and operational alerts.",
+    "Developed a flexible inventory management system with secure user authentication and detailed operational reporting.",
+    "Created interactive dashboards supporting trading activities with clear and actionable visual insights."
+  ],
+},
+
+  {
+  title: "Full-Stack Developer",
+  company_name: "Tafaseel Project",
+  icon: tafaseel_icon,
+  iconBg: "#383E56",
+  date: "DEC 2025 - JUN 2026",
+  points: [
+    "Designed and developed a dynamic admin dashboard using Next.js and React to manage and upload real estate projects efficiently.",
+    "Built secure RESTful APIs to handle project creation, high-quality image uploads, and structured data management.",
+    "Implemented image optimization and storage solutions to ensure fast loading performance while maintaining high visual quality.",
+    "Developed role-based authentication and authorization for the admin dashboard to ensure secure access control.",
+    "Structured and organized project content to deliver a clean, modern, and user-friendly presentation on the website.",
+    "Integrated backend services with MongoDB to manage project data, ensuring scalability and data consistency."
+  ],
+},
 
  
 ];
@@ -153,88 +211,56 @@ const projects = [
   {
     name: "Bay Homes Real Estate",
     description:
-      "A real estate web platform powered by Next.js and MongoDB. I developed and managed backend APIs for property listings, user authentication, and data management.",
+      "A full-stack real estate platform built with Next.js and MongoDB, featuring secure RESTful APIs, dynamic property listings, user authentication, and an integrated admin dashboard for efficient data and content management.",
     tags: [
-      {
-        name: "Next.js",
-        color: "white-text-gradient",
-      },
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "green-text-gradient",
-      },
+      { name: "Next.js", color: "white-text-gradient" },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "MongoDB", color: "green-text-gradient" },
     ],
     image: bayhomes,
     source_code_link: "https://www.bayhomesae.com/",
   },
+
+  {
+    name: "Tafaseel Architecture",
+    description:
+      "A modern architectural company website developed using Next.js and custom APIs, featuring a secure admin dashboard for managing projects, uploading high-quality images, and organizing structured content with optimized performance.",
+    tags: [
+      { name: "Next.js", color: "white-text-gradient" },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
+      { name: "MongoDB", color: "green-text-gradient" },
+    ],
+    image: tafaseel,
+    source_code_link: "https://www.tafaseelarch.com/",
+  },
+
   {
     name: "AI Summarizer",
     description:
-      "An AI-powered tool that summarizes content from any URL using OpenAI's GPT models. Built with React and integrated via RapidAPI for seamless content processing.",
+      "An AI-powered web application built with React that generates concise summaries from any URL using OpenAI models via RapidAPI, delivering fast and efficient content processing with a clean user interface.",
     tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "RapidAPI ",
-        color: "green-text-gradient",
-      },
-      {
-        name: "OPenAI",
-        color: "pink-text-gradient",
-      },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "RapidAPI", color: "green-text-gradient" },
+      { name: "OpenAI", color: "pink-text-gradient" },
     ],
     image: AIsummarize,
     source_code_link: "https://ai-summarizer-two-zeta.vercel.app/",
   },
-  /* {
-    name: "NFT Marketplace",
-    description:
-      "A decentralized platform enabling users to mint, buy, and trade NFTs. Built with Next.js, Solidity, and Web3.js, with smart contracts and blockchain-based asset verification.",
-    tags: [
-      {
-        name: "Next.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Solidity",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Web3.js",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: nft,
-    source_code_link: "https://nft-marketplace-nu-nine.vercel.app/",
-  }, */
-  {
-  name: "Dev Over Flow",
-  description:
-    "Dev Over Flow is a developer-focused Q&A platform designed to foster a large programming community. It allows users to ask questions, provide answers, add tags, and interact through voting and saving important content. The platform also features AI-powered answer recommendations, highlights top questions, and showcases popular tags, enabling programmers to efficiently share knowledge and collaborate on coding challenges.",
-  tags: [
-    {
-      name: "Next.js",
-      color: "blue-text-gradient",
-    },
-    {
-      name: "React",
-      color: "green-text-gradient",
-    },
-    {
-      name: "Tailwind CSS",
-      color: "pink-text-gradient",
-    },
-  ],
-  image: devoverflow, 
-  source_code_link: "https://dev-over-flow-xi.vercel.app/",
-}
 
+  {
+    name: "DevOverFlow",
+    description:
+      "A full-stack developer Q&A platform built with Next.js and Tailwind CSS, enabling users to ask questions, post answers, vote, save content, and receive AI-powered recommendations within a structured knowledge-sharing environment.",
+    tags: [
+      { name: "Next.js", color: "white-text-gradient" },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
+      { name: "MongoDB", color: "green-text-gradient" },
+    ],
+    image: devoverflow,
+    source_code_link: "https://dev-over-flow-xi.vercel.app/",
+  },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { technologies, experiences, testimonials, projects };

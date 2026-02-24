@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -24,11 +24,14 @@ import threejs from "./tech/threejs.svg";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import bayhomes_icon from "./company/bayhomes.png";
+import tafaseel_icon from "./company/tafaseel.png";
+import amilcar_icon from "./company/amilcar.png";
 import tesla from "./company/tesla.png";
 
 import bayhomes from "./BayHomes.png";
 import AIsummarize from "./AI_Summarize.png";
-import nft from "./nft.png";
+import tafaseel from "./tafaseel.png";
+import devoverflow from "./devoverflow.png"
 
 export {
   logo,
@@ -55,8 +58,11 @@ export {
   meta,
   shopify,
   bayhomes_icon,
+  tafaseel_icon,
+  amilcar_icon,
   tesla,
   bayhomes,
   AIsummarize,
-  nft,
+  tafaseel,
+  devoverflow
 };

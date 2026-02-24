@@ -7,23 +7,22 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 mb-40 `}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Maha</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I build robust server-side 
-              applications, design APIs, and manage <br className='sm:block hidden' />
-              databases to power seamless experiences
-          </p>
-        </div>
+       <div>
+        <h1 className={`${styles.heroHeadText} text-white`}>
+          Hi, I'm <span className='text-[#915EFF]'>Maha</span>
+        </h1>
+        <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          Full-Stack Developer specializing in building scalable web applications,
+          secure APIs, and optimized databases that power seamless, high-performance digital experiences.
+        </p>
+      </div>
       </div>
 
       <ComputersCanvas />
