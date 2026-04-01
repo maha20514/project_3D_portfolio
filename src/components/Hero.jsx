@@ -20,7 +20,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className={`relative w-full mx-auto ${isMobile ? "min-h-[300px]" : "h-screen"}`}>
       <div
         className={`absolute inset-0 max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 ${
           isMobile ? "top-[80px] mb-0" : "top-[120px] mb-40"
