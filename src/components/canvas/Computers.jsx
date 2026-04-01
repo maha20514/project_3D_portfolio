@@ -22,8 +22,8 @@ const Computers = ({ isMobile }) => {
 
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.55 : 0.75}           // smaller on mobile
-        position={isMobile ? [0, -3.4, -2.8] : [0, -3.25, -1.5]}
+        scale={isMobile ? 0.5 : 0.75}           // Much smaller on mobile
+        position={isMobile ? [0, -3.5, -3.0] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -39,7 +39,6 @@ const ComputersCanvas = () => {
 
     const handleChange = (e) => setIsMobile(e.matches);
     mediaQuery.addEventListener("change", handleChange);
-
     return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
@@ -47,12 +46,12 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      dpr={[1, 1.5]}                    // lower dpr on mobile for performance
+      dpr={isMobile ? [1, 1.5] : [1, 2]}     // Lower resolution on mobile
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ 
         preserveDrawingBuffer: true,
         alpha: true,
-        antialias: false,               // ← Critical fix for iOS / mobile
+        antialias: false,                    // ← Most important fix for iOS
         powerPreference: "default"
       }}
       style={{ width: "100%", height: "100%" }}
