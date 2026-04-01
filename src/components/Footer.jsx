@@ -76,7 +76,7 @@ const Footer = () => {
               Email
             </a>
             <a
-              href="https://wa.me/966XXXXXXXXX"
+              href="https://wa.me/966559204224"
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary hover:text-white transition-colors duration-300"

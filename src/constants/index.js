@@ -87,7 +87,7 @@ export const services = [
 ];
 
 const technologies = [
-  {
+ /*  {
     name: "HTML 5",
     icon: html,
   },
@@ -102,7 +102,7 @@ const technologies = [
   {
     name: "TypeScript",
     icon: typescript,
-  },
+  }, */
   {
     name: "React JS",
     icon: reactjs,
