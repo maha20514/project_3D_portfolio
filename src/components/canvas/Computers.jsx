@@ -4,9 +4,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("/desktop_pc/scene.gltf"); // make sure this is in public/
-
-  if (!computer || !computer.scene) return null; // safe check
+  const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
     <mesh>
@@ -31,30 +29,32 @@ const Computers = ({ isMobile }) => {
 };
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(null); // null until detected
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
     setIsMobile(mediaQuery.matches);
-    const handler = (e) => setIsMobile(e.matches);
-    mediaQuery.addEventListener("change", handler);
-    return () => mediaQuery.removeEventListener("change", handler);
+
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+      // Force cursor to default on mobile
+      document.body.style.cursor = event.matches ? "default" : "auto";
+    };
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Initial cursor style
+    document.body.style.cursor = mediaQuery.matches ? "default" : "auto";
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      document.body.style.cursor = "auto"; // reset on unmount
+    };
   }, []);
 
-  if (isMobile === null) return null; // wait for detection
+  // If mobile, hide Canvas completely
+  if (isMobile) return null;
 
-  // Mobile fallback: static image
-  if (isMobile) {
-    return (
-      <img
-        src="/desktop_pc_preview.png" // put a preview in public/
-        alt="Computer"
-        className="absolute inset-0 top-[50px] z-0 w-full h-auto"
-      />
-    );
-  }
-
-  // Desktop: render 3D Canvas
   return (
     <Canvas
       frameloop="demand"
@@ -70,7 +70,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={false} />
+        <Computers isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
