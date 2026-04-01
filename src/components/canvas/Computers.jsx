@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const { scene } = useGLTF("/desktop_pc/scene.gltf");
+  const computer = useGLTF("/desktop_pc/scene.gltf");
 
   return (
     <mesh>
@@ -16,13 +16,14 @@ const Computers = ({ isMobile }) => {
         penumbra={1} 
         intensity={1} 
         castShadow 
+        shadow-mapSize={1024}
       />
       <pointLight intensity={1} />
-      
+
       <primitive
-        object={scene}
-        scale={isMobile ? 0.6 : 0.75}
-        position={isMobile ? [0, -3.3, -2.8] : [0, -3.25, -1.5]}
+        object={computer.scene}
+        scale={isMobile ? 0.55 : 0.75}           // smaller on mobile
+        position={isMobile ? [0, -3.4, -2.8] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -36,22 +37,23 @@ const ComputersCanvas = () => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
     setIsMobile(mediaQuery.matches);
 
-    const listener = (e) => setIsMobile(e.matches);
-    mediaQuery.addEventListener("change", listener);
-    return () => mediaQuery.removeEventListener("change", listener);
+    const handleChange = (e) => setIsMobile(e.matches);
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
   return (
     <Canvas
       frameloop="demand"
       shadows
-      dpr={[1, 2]}
+      dpr={[1, 1.5]}                    // lower dpr on mobile for performance
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ 
         preserveDrawingBuffer: true,
         alpha: true,
-        antialias: true,
-        powerPreference: "high-performance"
+        antialias: false,               // ← Critical fix for iOS / mobile
+        powerPreference: "default"
       }}
       style={{ width: "100%", height: "100%" }}
     >
