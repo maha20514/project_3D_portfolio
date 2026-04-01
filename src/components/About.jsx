@@ -65,7 +65,7 @@ const About = () => {
 
       <div
         className={`flex flex-wrap gap-10 ${
-          isMobile ? "mt-0" : "mt-20"
+          isMobile ? "mt-5" : "mt-20"
         }`}
       >
         {services.map((service, index) => (
