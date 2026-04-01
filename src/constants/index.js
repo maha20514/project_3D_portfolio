@@ -26,6 +26,7 @@ import {
   tafaseel,
   devoverflow,
   threejs,
+  erbBackend,
 } from "../assets";
 
 export const navLinks = [
@@ -132,6 +133,7 @@ const experiences = [
   {
     title: "Back-End Developer",
     company_name: "Bay Homes Real State",
+    company_link: "https://www.bayhomesae.com/",
     icon: bayhomes_icon,
     iconBg: "#383E56",
     date: "JUN 2024 - SEP 2024",
@@ -164,6 +166,7 @@ const experiences = [
   {
   title: "Full-Stack Developer",
   company_name: "Tafaseel Project",
+  company_link: "https://www.tafaseelarch.com/",
   icon: tafaseel_icon,
   iconBg: "#383E56",
   date: "DEC 2025 - JUN 2026",
@@ -218,7 +221,7 @@ const projects = [
       { name: "MongoDB", color: "green-text-gradient" },
     ],
     image: bayhomes,
-    source_code_link: "https://www.bayhomesae.com/",
+    source_code_link: "https://github.com/maha20514/Bay-Homes-Dashboard",
   },
 
   {
@@ -232,7 +235,7 @@ const projects = [
       { name: "MongoDB", color: "green-text-gradient" },
     ],
     image: tafaseel,
-    source_code_link: "https://www.tafaseelarch.com/",
+    source_code_link: "https://github.com/maha20514/tafaseel_proj",
   },
 
   {
@@ -245,7 +248,7 @@ const projects = [
       { name: "OpenAI", color: "pink-text-gradient" },
     ],
     image: AIsummarize,
-    source_code_link: "https://ai-summarizer-two-zeta.vercel.app/",
+    source_code_link: "https://github.com/maha20514/AI_Summarizer",
   },
 
   {
@@ -259,8 +262,21 @@ const projects = [
       { name: "MongoDB", color: "green-text-gradient" },
     ],
     image: devoverflow,
-    source_code_link: "https://dev-over-flow-xi.vercel.app/",
+    source_code_link: "https://github.com/maha20514/DevOverFlow",
   },
+  {
+  name: "ERP Backend System",
+  description:
+    "A scalable ERP backend API built with NestJS, Prisma, and PostgreSQL, featuring JWT authentication, role-based access control, and fully documented REST endpoints using Swagger.",
+  tags: [
+    { name: "NestJS", color: "red-text-gradient" },
+    { name: "PostgreSQL", color: "blue-text-gradient" },
+    { name: "Prisma", color: "green-text-gradient" },
+    { name: "JWT", color: "pink-text-gradient" },
+  ],
+  image: erbBackend,
+  source_code_link: "https://github.com/maha20514/erb-backend",
+},
 ];
 
 export { technologies, experiences, testimonials, projects };

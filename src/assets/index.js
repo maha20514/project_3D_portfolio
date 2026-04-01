@@ -32,6 +32,7 @@ import bayhomes from "./BayHomes.png";
 import AIsummarize from "./AI_Summarize.png";
 import tafaseel from "./tafaseel.png";
 import devoverflow from "./devoverflow.png"
+import erbBackend from "./erbBackend.png";
 
 export {
   logo,
@@ -64,5 +65,6 @@ export {
   bayhomes,
   AIsummarize,
   tafaseel,
-  devoverflow
+  devoverflow,
+  erbBackend,
 };
