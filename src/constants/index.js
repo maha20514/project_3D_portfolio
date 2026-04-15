@@ -92,14 +92,14 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  {
+  /* {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  /* {
+  }, */
+   {
     name: "Node JS",
     icon: nodejs,
-  }, */
+  }, 
   {
     name: "MongoDB",
     icon: mongodb,

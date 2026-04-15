@@ -36,8 +36,7 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915EFF]">Maha</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Full-Stack Developer specializing in building scalable web applications,
-            secure APIs, and optimized databases that power seamless, high-performance digital experiences.
+            I build scalable backend systems, secure APIs, and high-performance applications using NestJS and TypeScript — with a solid understanding of full-stack development.
           </p>
         </div>
       </div>
